@@ -67,12 +67,11 @@ img {
     align-items: center;
 }
 
-.header{
-border-bottom: 1px solid var(--border-header);
-}
+
 
 .header .container{
 height: 80px;
+border-bottom: 1px solid var(--border-header);
 }
 
 
@@ -135,6 +134,19 @@ height: 80px;
 
 .pages .curent {
     color: var(--accent-color) ;
+    position: relative;
+}
+
+.pages .curent::after{
+    content: '';
+    height: 4px;
+    background:var(--accent-color);
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transform: translate(0, -100%);
 }
 
 /*Студия*/
