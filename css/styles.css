@@ -70,11 +70,12 @@ img {
     align-items: center;
 }
 
-
+.header {
+    border-bottom: 1px solid var(--border-header);
+}
 
 .header .container{
 height: 80px;
-border-bottom: 1px solid var(--border-header);
 }
 
 
@@ -149,7 +150,7 @@ border-bottom: 1px solid var(--border-header);
     left: 0;
     width: 100%;
     position: absolute;
-    transform: translate(0, -100%);
+    transform: translate(0, -3px);
 }
 
 /*Студия*/
@@ -635,7 +636,8 @@ margin-right: 8px;
     background-color: rgba(33, 150, 243, 0.9);;
 }
 
-.portfolio-item:hover .paragraph-card {
+.card-link:hover .paragraph-card,
+.card-link:focus .paragraph-card {
     transform: translateY(0);
 }
 
